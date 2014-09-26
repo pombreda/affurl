@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from urllib import urlencode
-from urlparse import parse_qs, urlparse, urlunparse
+from urlparse import parse_qs, urlsplit, urlunsplit
 from domain_parser import domain_parser
 
 
@@ -18,7 +18,7 @@ def convert(url, mapping):
         }
     '''
 
-    new_url = urlparse(url)
+    new_url = urlsplit(url)
     if not new_url.netloc:
         return None  # rather raise an Exception?
 
@@ -40,6 +40,6 @@ def convert(url, mapping):
 
     q = parse_qs(new_url.query)
     q.update(params)
-    new_url = new_url[:4] + (urlencode(q, True), ) + new_url[5:]
+    new_url = new_url[:3] + (urlencode(q, True), ) + new_url[4:]
 
-    return urlunparse(new_url)
+    return urlunsplit(new_url)
