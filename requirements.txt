@@ -1,1 +1,2 @@
+domain-parser==0.0.3
 wheel==0.24.0

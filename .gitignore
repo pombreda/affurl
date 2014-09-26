@@ -1,3 +1,6 @@
+# domain_parser creates a pickle file with list of slds and tlds
+*.pickle
+
 *.py[cod]
 
 # C extensions
