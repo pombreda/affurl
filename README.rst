@@ -19,7 +19,7 @@ Turn URLs into affiliate URLs based on provided domain parameter mapping. This p
 Usage
 ~~~~~
 
-.. highlight:: python
+::
 
     from affurl import affurl
 
