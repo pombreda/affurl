@@ -30,13 +30,6 @@ def convert(url, mapping):
     if domain not in mapping:
         return url
 
-    # make sure this is a product URL. FIXME why is this important, which URLs
-    # do not work when tag param is added? Maybe because in the previous
-    # version all other params were removed?
-
-    # if '/dp/' not in new_url.path and '/gp/product/' not in new_url.path:
-    #     return url
-
     # Add new and replace existing query paramters with given ones.
     query = parse_qs(new_url.query)
     params = mapping[domain]
