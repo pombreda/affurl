@@ -17,7 +17,9 @@ Turn URLs into affiliate URLs based on provided domain parameter mapping.
 * Free software: MIT license
 * Documentation: https://pythonhosted.org/affurl/
 
-Features
---------
+TODO
+----
 
-* TODO
+* Make it work under Python 2 and 3, to fix:
+    * urllib
+
