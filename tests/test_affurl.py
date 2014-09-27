@@ -54,7 +54,13 @@ class TestAffurl(unittest.TestCase):
              'http://www.amazon.com/?tag=affurl-20'),
             # product page
             ('http://www.amazon.com/dp/1906966141?ie=UTF8',
-             'http://www.amazon.com/dp/1906966141?ie=UTF8&tag=affurl-20')
+             'http://www.amazon.com/dp/1906966141?ie=UTF8&tag=affurl-20'),
+            # best seller page
+            ('http://www.amazon.com/Laptops-Tablets/b/ref=nav_shopall_lapnet?ie=UTF8&node=2956501011',
+             'http://www.amazon.com/Laptops-Tablets/b/ref=nav_shopall_lapnet?ie=UTF8&node=2956501011&tag=affurl-20'),
+            # UK page
+            ('http://www.amazon.co.uk/Best-Sellers-Welcome/zgbs/',
+             'http://www.amazon.co.uk/Best-Sellers-Welcome/zgbs/?tag=afflink-21'),
         ]
 
         for url in urls:
