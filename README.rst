@@ -23,10 +23,15 @@ Usage
 
     from affurl import affurl
 
-    mapping = {'amazon.com': {'tag': ['affurl-20']}}
+    mapping = {
+        'amazon.com': {'tag': ['affurl-20']},
+        'amazon.co.uk': {'tag': ['afflink-21']}
+    }
     urls = [
-        'http://www.amazon.com/',
-        'http://www.amazon.com/dp/1906966141?ie=UTF8'
+        'http://www.amazon.com/', # no existing URL params
+        'http://www.amazon.com/dp/1906966141?ie=UTF8',# with URL params
+        'http://www.amazon.com/dp/1906966141?tag=XXX',# replace existing tag
+        'http://www.amazon.co.uk/Best-Sellers-Welcome/zgbs/' # different domain and tag
     ]
     for url in urls:
         print(affurl.convert(url, mapping))
@@ -36,6 +41,8 @@ Output
 
 | http://www.amazon.com/?tag=affurl-20
 | http://www.amazon.com/dp/1906966141?tag=affurl-20&ie=UTF8
+| http://www.amazon.com/dp/1906966141?tag=affurl-20
+| http://www.amazon.co.uk/Best-Sellers-Welcome/zgbs/?tag=afflink-21
 
 About
 -----
