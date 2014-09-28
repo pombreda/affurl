@@ -25,7 +25,7 @@ setup(
                  'affurl'},
     include_package_data=True,
     install_requires=requirements,
-    license="MIT",
+    license='MIT',
     zip_safe=False,
     keywords='affurl',
     classifiers=[

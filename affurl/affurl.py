@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from urllib import urlencode
-from urlparse import parse_qs, urlsplit, urlunsplit
-
 from domain_parser import domain_parser
+
+from .compat import urlencode
+from .compat import parse_qs, urlsplit, urlunsplit
 
 
 def convert(url, mapping):

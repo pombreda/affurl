@@ -10,7 +10,7 @@ Tests for `affurl` module.
 
 import unittest
 
-from urlparse import parse_qs, urlsplit
+from affurl.compat import parse_qs, urlsplit
 
 from affurl import affurl
 
@@ -19,8 +19,8 @@ class TestAffurl(unittest.TestCase):
 
     def assertEquivalentUrls(self, url1, url2):
         # TODO parse urls and compare parts with asserts
-        purl1 = urlsplit(url1)
-        purl2 = urlsplit(url2)
+        purl1 = affurl.compat.urlsplit(url1)
+        purl2 = affurl.compat.urlsplit(url2)
 
         self.assertEqual(purl1.scheme, purl2.scheme)
         self.assertEqual(purl1.netloc, purl2.netloc)
@@ -68,7 +68,7 @@ class TestAffurl(unittest.TestCase):
             url2 = affurl.convert(url[0], self.mapping)  # converted URL
             self.assertEquivalentUrls(url1, url2)
 
-    def test_convert_not_converted(self):
+    def test_convert_converted(self):
         '''Test to make sure URL is actually changed.
 
         Test URLs have only 1 parameter so that order of query dict doesn't
