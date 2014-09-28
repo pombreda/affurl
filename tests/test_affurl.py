@@ -19,8 +19,8 @@ class TestAffurl(unittest.TestCase):
 
     def assertEquivalentUrls(self, url1, url2):
         # TODO parse urls and compare parts with asserts
-        purl1 = affurl.compat.urlsplit(url1)
-        purl2 = affurl.compat.urlsplit(url2)
+        purl1 = urlsplit(url1)
+        purl2 = urlsplit(url2)
 
         self.assertEqual(purl1.scheme, purl2.scheme)
         self.assertEqual(purl1.netloc, purl2.netloc)
