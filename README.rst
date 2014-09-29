@@ -53,6 +53,6 @@ About
 TODO
 ----
 
-* Make it work under Python 2 and 3, to fix:
-    * urllib
+* Install Python 3.3 to test affurl
+* Cleanup setup.py once there is a domain_parser release that supports Python 3
 * Make it possible to replace the host part

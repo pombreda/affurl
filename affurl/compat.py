@@ -9,7 +9,7 @@ import sys
 is3 = sys.version_info[0] == 3
 
 if is3:
-     from urllib.parse import parse_qs, urlsplit, urlunsplit
+     from urllib.parse import parse_qs, urlsplit, urlunsplit, urlencode
 else:
     from urllib import urlencode
     from urlparse import parse_qs, urlsplit, urlunsplit

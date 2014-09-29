@@ -8,7 +8,7 @@ except ImportError:
 
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
-requirements = open('requirements.txt').read().splitlines()
+#requirements = open('requirements.txt').read().splitlines()
 
 setup(
     name='affurl',
@@ -24,7 +24,9 @@ setup(
     package_dir={'affurl':
                  'affurl'},
     include_package_data=True,
-    install_requires=requirements,
+    #install_requires=requirements,
+    install_requires=['domain_parser'],
+    dependency_links=['git+https://github.com/jeffknupp/domain-parser.git@912f466361b6f89dcdb308b2ff03c99471cf96df#egg=domain_parser-master'],
     license='MIT',
     zip_safe=False,
     keywords='affurl',
@@ -35,9 +37,9 @@ setup(
         'Natural Language :: English',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
-        # 'Programming Language :: Python :: 3',
-        # 'Programming Language :: Python :: 3.3',
-        # 'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3',
+        #'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
     ],
     test_suite='tests',
     # tests_require=test_requirements
