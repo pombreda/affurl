@@ -16,6 +16,8 @@ Quickstart
 
 Turn URLs into affiliate URLs based on provided domain parameter mapping. This package currently works provided you only need to add or change query parameters of the URL, an example are links to different Amazon domains. See the code and the result below.
 
+Read the documentation at: https://pythonhosted.org/affurl/
+
 Usage
 ~~~~~
 
@@ -44,11 +46,15 @@ Output
 | http://www.amazon.com/dp/1906966141?tag=affurl-20
 | http://www.amazon.co.uk/Best-Sellers-Welcome/zgbs/?tag=afflink-21
 
+Python 3 Compatibility
+----------------------
+
+affurl works under Python 3, but when you install it from PyPI it installs domain_parser 0.0.3 which is not. To use affurl with Python 3 clone this repo and install directly from the setup script.
+
 About
 -----
 
 * Free software: MIT license
-* Documentation: https://pythonhosted.org/affurl/
 
 TODO
 ----
