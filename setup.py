@@ -12,7 +12,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='affurl',
-    version='0.1.0',
+    version='0.1.1',
     description='Turn URLs into affiliate URLs based on provided domain parameter mapping',
     long_description=readme + '\n\n' + history,
     author='Ramiro Gómez',
@@ -26,6 +26,7 @@ setup(
     include_package_data=True,
     #install_requires=requirements,
     install_requires=['domain_parser'],
+    setup_requires=['domain_parser'],
     dependency_links=['git+https://github.com/jeffknupp/domain-parser.git@912f466361b6f89dcdb308b2ff03c99471cf96df#egg=domain_parser-master'],
     license='MIT',
     zip_safe=False,
