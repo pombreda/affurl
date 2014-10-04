@@ -61,6 +61,9 @@ class TestAffurl(unittest.TestCase):
             # UK page
             ('http://www.amazon.co.uk/Best-Sellers-Welcome/zgbs/',
              'http://www.amazon.co.uk/Best-Sellers-Welcome/zgbs/?tag=afflink-21'),
+            # US browse node page with existing tag
+            ('https://www.amazon.com/s/browse.html/ref=xs_gb_rss_A40DBTSUV7SEW/?node=9862773011&ccmID=380205&tag=rssfeeds-20',
+             'https://www.amazon.com/s/browse.html/ref=xs_gb_rss_A40DBTSUV7SEW/?node=9862773011&ccmID=380205&tag=affurl-20')
         ]
 
         for url in urls:
