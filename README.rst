@@ -51,14 +51,3 @@ Python 3 Compatibility
 
 affurl works under Python 3, but when you install it from PyPI it installs domain_parser 0.0.3 which is not. To use affurl with Python 3 clone this repo and install directly from the setup script.
 
-About
------
-
-* Free software: MIT license
-
-TODO
-----
-
-* Install Python 3.3 to test affurl
-* Cleanup setup.py once there is a domain_parser release that supports Python 3
-* Make it possible to replace the host part
