@@ -1,10 +1,15 @@
-affurl package
+affurl Package
 ==============
 
-Submodules
-----------
+:mod:`affurl` Package
+---------------------
 
-affurl.affurl module
+.. automodule:: affurl.__init__
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+:mod:`affurl` Module
 --------------------
 
 .. automodule:: affurl.affurl
@@ -12,7 +17,7 @@ affurl.affurl module
     :undoc-members:
     :show-inheritance:
 
-affurl.compat module
+:mod:`compat` Module
 --------------------
 
 .. automodule:: affurl.compat
@@ -20,11 +25,3 @@ affurl.compat module
     :undoc-members:
     :show-inheritance:
 
-
-Module contents
----------------
-
-.. automodule:: affurl
-    :members:
-    :undoc-members:
-    :show-inheritance:
